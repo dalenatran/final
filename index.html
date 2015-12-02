@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
   </head>
+  <link href="style.css" rel="Stylesheet" type="text/css" />
   <body>
 	  <header>
 		  <h1>DALENA TRAN</h1>
@@ -25,12 +43,18 @@
 			  
 			  <p>Hello, I'm Dalena, currently a student studying graphic design at MassArt. I like solving problems, solitude, and unpredictability. With what little spare time I have, I produce music, listen to podcasts, attend shows, and learn new things.</p>
 			  
-			  <img src="images/boston.jpg" style="width:300px;height:300px;">
-			  <img src="images/chess.jpg" style="width:300px;height:300px;">
-			  <img src="images/cuckoo.jpg" style="width:300px;height:300px;">
-			  <img src="images/eyes.jpg" style="width:300px;height:300px;">
-			  <img src="images/train.jpg" style="width:300px;height:300px;">
-			  <img src="images/wanderu.png" style="width:300px;height:300px;">
+			  
+			  <a class="fancybox" rel="group" href="bigimages/bostonbig.jpg"><img src="images/boston.jpg" style="width:300px;height:300px;" alt="" /></a>
+			  
+			  <a class="fancybox" rel="group" href="bigimages/100thingsbig.png"><img src="images/100things1.png" style="width:300px;height:300px;" alt="" /></a>
+				  
+			   <a class="fancybox" rel="group" href="bigimages/cuckoobig.jpg"><img src="images/cuckoo.jpg" style="width:300px;height:300px;" alt="" /></a>
+				   
+			   <a class="fancybox" rel="group" href="bigimages/eyesbig.jpg"><img src="images/eyes.jpg" style="width:300px;height:300px;" alt="" /></a>
+				   
+			   <a class="fancybox" rel="group" href="bigimages/trainbig.jpg"><img src="images/train.jpg" style="width:300px;height:300px;" alt="" /></a>
+				   
+			   <a class="fancybox" rel="group" href="bigimages/wanderubig.png"><img src="images/wanderu.png" style="width:300px;height:300px;" alt="" /></a>
 			  
 			  
 			  
@@ -39,5 +63,12 @@
 				  339-222-3258
 				  behance
 				  linked-in</p>
+  
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$(".fancybox").fancybox();
+  	});
+  </script>
+	
   </body>
 </html>
