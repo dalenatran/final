@@ -49,13 +49,13 @@ table {
 
 /* Add Styles Here */
 
-h1 { font-size:25px;
+h1 {
+	font-size:25px;
 	line-height:1.4em;
 	padding:30px;}
 	
 nav li {
 	list-style-type:none;
-	top: 15px;
 	float:right;
 	display: inline-block;
 	padding-left:30px;
@@ -63,10 +63,16 @@ nav li {
 
 p { 
 	padding:30px;
-	margin:400px;
+	
 	line-height:30px;
 	color:gray;}
 	
+#about {
+	clear:both;
+	padding-top:750px;
+	padding-bottom:750px;
+	width:400px;
+	margin:0 auto;}	
 
 	
 body { font-family:arial; 
@@ -78,9 +84,18 @@ a {text-decoration:none;}
 
 img {width:33%;}
 
-#footer-wrapper {
- clear:both;
- width:100%;
-}
+#contact {
+	clear:both;
+	padding-top:750px;
+	padding-bottom:200px;
+	width:500px;
+	margin:0 auto;}	
+
+
+#name {width:300px;
+	float:left;}
+
+
+
 
 
